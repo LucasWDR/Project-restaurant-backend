@@ -1,0 +1,13 @@
+{
+  "name": "Project-restaurant-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LucasWDR/Project-restaurant-backend.git",
+  "author": "Lucas Rosa <lucas.wittdarosa@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "sequelize": "^6.15.0"
+  }
+}
