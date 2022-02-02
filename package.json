@@ -15,10 +15,10 @@
     "mysql2": "^2.3.3",
     "node": "^17.4.0",
     "sequelize": "^6.15.0",
-    "sequelize-cli": "^6.4.1",
     "tedious": "^14.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
   }
 }
