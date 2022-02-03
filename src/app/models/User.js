@@ -8,7 +8,7 @@ static init(sequelize){
         email: DataTypes.STRING,
         password:DataTypes.STRING,
       }, {
-        sequelize
+        sequelize: sequelize
       })
  }
 }
