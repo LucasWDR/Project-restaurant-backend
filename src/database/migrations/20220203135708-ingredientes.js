@@ -7,7 +7,7 @@ module.exports = {
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      nome: {
+      name: {
         allowNull: false,
         type: DataTypes.STRING,
       },
