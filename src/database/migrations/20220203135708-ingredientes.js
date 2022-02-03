@@ -1,24 +1,23 @@
 module.exports = {
-  up: (queryInterface, DataTypes) => {
-    return queryInterface.createTable('Users', {
+  async up (queryInterface, DataTypes) {
+    return queryInterface.createTable('Ingredientes', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      name: {
+      nome: {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      email: {
+      quantidade:{
         allowNull: false,
-        type: DataTypes.STRING,
-        unique: true,
+        type:DataTypes.DECIMAL
       },
-      password: {
+      price:{
         allowNull: false,
-        type: DataTypes.STRING,
+        type:DataTypes.DOUBLE(11, 10)
       },
       createdAt: {
         allowNull: false,
@@ -29,9 +28,10 @@ module.exports = {
         type: DataTypes.DATE,
       },
     });
+   
   },
 
-  down: (queryInterface) => {
-    return queryInterface.dropTable('Users');
+  async down (queryInterface, Sequelize) {
+    return queryInterface.dropTable('Ingredientes');
   }
 };
